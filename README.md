@@ -11,7 +11,13 @@ This program is a Socket client that connects to the MCU and:
 
 #### Dependencies 
 
-Install Python 3.8 or superior.
+Install Python 3.8 or superior. 
+
+Install pyyaml:
+
+```
+pyyaml
+```
 
 #### How to run 
 
@@ -24,7 +30,7 @@ python fake_mcu_server.py
 Then run the client to configure the LED arc system and launch a sequence.
 
 ```
-python configure_and_run.py
+python configure_and_run.py <server-ip> <server-port> <path-to-config.yml>
 ```
 
 
