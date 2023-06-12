@@ -1,0 +1,29 @@
+trigger: # camera trigger 
+  enabled: False 
+  delay_us: 0 # delay in us from light change to trigger
+  duration_us : 10 # duration of the trigger signal in high level
+
+light:
+  number_arcs: 2 # number of arcs
+  number_leds: 144 # number of leds per arc
+  sequence:
+    period_us: 500000 # period of the sequence in us
+    number_states: 4 # number of states in the sequence
+    led_groups: 4 # number of led groups   
+    repeat: 1 # number of times the pattern is repeated
+    states:
+    - - [255, 0, 0, 0] # state0 arc0
+      - [255, 0, 0, 0] # state0 arc1
+    
+    - - [0, 255, 0, 0] # state1 arc0
+      - [0, 255, 0, 0] # state1 arc1
+
+    - - [0, 0, 255, 0] # state2 arc0
+      - [0, 0, 255, 0] # state2 arc1
+
+    - - [0, 0, 0, 255] # state3 arc0
+      - [0, 0, 0, 255] # state3 arc1
+
+    
+
+
