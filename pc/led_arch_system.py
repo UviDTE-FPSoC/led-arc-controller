@@ -1,4 +1,4 @@
-
+import time
 import socket
 import struct
 import binascii
@@ -144,13 +144,12 @@ class LedArchSystem():
             message.extend(struct.pack('B', 1)) 
         else:
             message.extend(struct.pack('B', 0))
-        message.extend(struct.pack('L', config["trigger"]["delay_us"])) 
-        message.extend(struct.pack('L', config["trigger"]["duration_us"]))
-        message.extend(struct.pack('H', config["light"]["number_arcs"]))
-        message.extend(struct.pack('H', config["light"]["number_arcs"]))
+        message.extend(struct.pack('>I', int(config["trigger"]["delay_us"]))) 
+        message.extend(struct.pack('>I', int(config["trigger"]["duration_us"])))
+        message.extend(struct.pack('>H', config["light"]["number_arcs"]))
 
         print("Size of global configuration message is " + str(len(message)) + " bytes.")
-        print("Global configuration message is " + str(message))
+        print("Global configuration message is " + str(binascii.hexlify(message)))
 
         return message
     
@@ -169,19 +168,19 @@ class LedArchSystem():
         message = bytearray()
 
         message.extend(struct.pack('B', 1)) # arc config command code
-        message.extend(struct.pack('H', arc)) # arc number
-        message.extend(struct.pack('H', config["light"]["number_leds"]))
-        message.extend(struct.pack('L', config["light"]["sequence"]["period_us"]))
-        message.extend(struct.pack('H', config["light"]["sequence"]["number_states"]))
-        message.extend(struct.pack('H', config["light"]["sequence"]["led_groups"]))
-        message.extend(struct.pack('L', config["light"]["sequence"]["repeat"]))
+        message.extend(struct.pack('>H', arc)) # arc number
+        message.extend(struct.pack('>H', int(config["light"]["number_leds"])))
+        message.extend(struct.pack('>I', int(config["light"]["sequence"]["period_us"])))
+        message.extend(struct.pack('>H', int(config["light"]["sequence"]["number_states"])))
+        message.extend(struct.pack('>H', int(config["light"]["sequence"]["led_groups"])))
+        message.extend(struct.pack('>I', int(config["light"]["sequence"]["repeat"])))
 
         for state in config["light"]["sequence"]["states"]:
             for intensity in state[arc]:
                 message.extend(struct.pack('B', intensity))
 
         print("Size of arc configuration message is " + str(len(message)) + " bytes.")
-        print("Arc configuration message is " + str(message))
+        print("Arc configuration message is " + str(binascii.hexlify(message)))
 
         return message
 
@@ -197,7 +196,7 @@ class LedArchSystem():
         message.extend(struct.pack('B', 2)) # start sequence command code
 
         print("Size of start message is " + str(len(message)) + " bytes.")
-        print("Start message is " + str(message))
+        print("Start message is " + str(binascii.hexlify(message)))
 
         return message
 
@@ -212,6 +211,8 @@ class LedArchSystem():
         - response (Response enum): response from the system
         """ 
         response = struct.unpack('B', message)
+        print("Response message in HEX is " + str(binascii.hexlify(message)))
+        print("Response message in INT is " + str(response[0]))
         if response[0] == 0:
             return self.Response.OK
         elif response[0] == 1:
