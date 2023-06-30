@@ -8,25 +8,11 @@ light:
   number_leds: 144 # number of leds per arc
   sequence:
     period_us: 100000 # period of the sequence in us
-    number_states: 8 # number of states in the sequence
-    led_groups: 8 # number of led groups
-    repeat: 2 # number of times the pattern is repeated
+    number_states: 1 # number of states in the sequence
+    led_groups: 1 # number of led groups
+    repeat: 1 # number of times the pattern is repeated
     states:
-    - - [255, 0, 0, 0, 0, 0, 0, 0] # state0 arc0
-    
-    - - [0, 255, 0, 0, 0, 0, 0, 0] # state1 arc0
-
-    - - [0, 0, 255, 0, 0, 0, 0, 0] # state2 arc0
-
-    - - [0, 0, 0, 255, 0, 0, 0, 0] # state3 arc0
-
-    - - [0, 0, 0, 0, 255, 0, 0, 0] # state3 arc0
-
-    - - [0, 0, 0, 0, 0, 255, 0, 0] # state3 arc0
-
-    - - [0, 0, 0, 0, 0, 0, 255, 0] # state3 arc0
-
-    - - [0, 0, 0, 0, 0, 0, 0, 255] # state3 arc0
+    - - [255] # state0 arc0
 
     
 

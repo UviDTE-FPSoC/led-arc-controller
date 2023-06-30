@@ -12,7 +12,7 @@ light:
     led_groups: 1 # number of led groups
     repeat: 1 # number of times the pattern is repeated
     states:
-    - - [255] # state0 arc0
+    - - [0] # state0 arc0
 
     
 
