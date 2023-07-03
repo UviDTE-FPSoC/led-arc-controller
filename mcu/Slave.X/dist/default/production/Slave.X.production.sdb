@@ -1,0 +1,612 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F47Q10 ]
+[d frameptr 4065 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"14 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\expand_heap.c
+[v ___expand_heap __expand_heap `(*.39v  1 e 2 0 ]
+"4 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lite_free.c
+[v ___simple_search_fl __simple_search_fl `(*.39v  1 e 2 0 ]
+"67
+[v _free free `(v  1 e 1 0 ]
+"16 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lite_malloc.c
+[v _malloc malloc `(*.39v  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Users\pabno\led-arc-controller\mcu\Slave.X\i2c_slave.c
+[v _i2c_ini_slave i2c_ini_slave `(v  1 e 1 0 ]
+"39 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _ini_timer0 ini_timer0 `(v  1 e 1 0 ]
+"53
+[v _ini_array ini_array `(*.39uc  1 e 2 0 ]
+"63
+[v _set_pixel_color set_pixel_color `(v  1 e 1 0 ]
+"73
+[v _end_frame end_frame `(v  1 e 1 0 ]
+"87
+[v _envio_pixel envio_pixel `(v  1 e 1 0 ]
+"115
+[v _start_frame start_frame `(v  1 e 1 0 ]
+"127
+[v _gestion_est_rep gestion_est_rep `(v  1 e 1 0 ]
+"148
+[v _interrupciones interrupciones `IIH(v  1 e 1 0 ]
+"253
+[v _main main `(v  1 e 1 0 ]
+"9 C:\Users\pabno\led-arc-controller\mcu\Slave.X\spi.c
+[v _spi_ini spi_ini `(v  1 e 1 0 ]
+"10212 C:/Program Files/Microchip/MPLABX/v6.05/packs/Microchip/PIC18F-Q_DFP/1.14.237/xc8\pic\include\proc\pic18f47q10.h
+[v _SSP2CLKPPS SSP2CLKPPS `VEuc  1 e 1 @3722 ]
+"10278
+[v _SSP2DATPPS SSP2DATPPS `VEuc  1 e 1 @3723 ]
+"10410
+[v _SSP2BUF SSP2BUF `VEuc  1 e 1 @3725 ]
+"10430
+[v _SSP2ADD SSP2ADD `VEuc  1 e 1 @3726 ]
+"10550
+[v _SSP2MSK SSP2MSK `VEuc  1 e 1 @3727 ]
+[s S70 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"10769
+[s S73 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S76 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S85 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S90 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S95 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S98 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S101 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S106 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S111 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S117 . 1 `uc 1 BF2 1 0 :1:0 
+`uc 1 UA2 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE2 1 0 :1:6 
+`uc 1 SMP2 1 0 :1:7 
+]
+[s S126 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START2 1 0 :1:3 
+`uc 1 STOP2 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S132 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW2 1 0 :1:2 
+`uc 1 I2C_START2 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA2 1 0 :1:5 
+]
+[s S138 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ2 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS2 1 0 :1:5 
+]
+[s S144 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A2 1 0 :1:5 
+]
+[s S149 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A2 1 0 :1:5 
+]
+[s S152 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA2 1 0 :1:5 
+]
+[s S157 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W2 1 0 :1:2 
+]
+[s S160 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT2 1 0 :1:5 
+]
+[s S165 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W2 1 0 :1:2 
+]
+[s S168 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_A2 1 0 :1:5 
+]
+[s S171 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S176 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE2 1 0 :1:2 
+]
+[s S179 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS2 1 0 :1:5 
+]
+[s S182 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS2 1 0 :1:5 
+]
+[u S187 . 1 `S70 1 . 1 0 `S73 1 . 1 0 `S76 1 . 1 0 `S85 1 . 1 0 `S90 1 . 1 0 `S95 1 . 1 0 `S98 1 . 1 0 `S101 1 . 1 0 `S106 1 . 1 0 `S111 1 . 1 0 `S117 1 . 1 0 `S126 1 . 1 0 `S132 1 . 1 0 `S138 1 . 1 0 `S144 1 . 1 0 `S149 1 . 1 0 `S152 1 . 1 0 `S157 1 . 1 0 `S160 1 . 1 0 `S165 1 . 1 0 `S168 1 . 1 0 `S171 1 . 1 0 `S176 1 . 1 0 `S179 1 . 1 0 `S182 1 . 1 0 ]
+[v _SSP2STATbits SSP2STATbits `VES187  1 e 1 @3728 ]
+"11074
+[v _SSP2CON1 SSP2CON1 `VEuc  1 e 1 @3729 ]
+[s S335 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"11104
+[s S341 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S346 . 1 `uc 1 SSPM02 1 0 :1:0 
+`uc 1 SSPM12 1 0 :1:1 
+`uc 1 SSPM22 1 0 :1:2 
+`uc 1 SSPM32 1 0 :1:3 
+`uc 1 CKP2 1 0 :1:4 
+`uc 1 SSPEN2 1 0 :1:5 
+`uc 1 SSPOV2 1 0 :1:6 
+`uc 1 WCOL2 1 0 :1:7 
+]
+[u S355 . 1 `S335 1 . 1 0 `S341 1 . 1 0 `S346 1 . 1 0 ]
+[v _SSP2CON1bits SSP2CON1bits `VES355  1 e 1 @3729 ]
+"11194
+[v _SSP2CON2 SSP2CON2 `VEuc  1 e 1 @3730 ]
+"14168
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @3762 ]
+"14378
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @3763 ]
+[s S414 . 1 `uc 1 SSPIP 1 0 :1:0 
+`uc 1 BCLIP 1 0 :1:1 
+`uc 1 SSP2IP 1 0 :1:2 
+`uc 1 BCL2IP 1 0 :1:3 
+`uc 1 TXIP 1 0 :1:4 
+`uc 1 RCIP 1 0 :1:5 
+`uc 1 TX2IP 1 0 :1:6 
+`uc 1 RC2IP 1 0 :1:7 
+]
+"14945
+[s S423 . 1 `uc 1 SSP1IP 1 0 :1:0 
+`uc 1 BCL1IP 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IP 1 0 :1:4 
+`uc 1 RC1IP 1 0 :1:5 
+]
+[u S429 . 1 `S414 1 . 1 0 `S423 1 . 1 0 ]
+[v _IPR3bits IPR3bits `VES429  1 e 1 @3768 ]
+[s S557 . 1 `uc 1 INT0IE 1 0 :1:0 
+`uc 1 INT1IE 1 0 :1:1 
+`uc 1 INT2IE 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+]
+"15230
+[u S564 . 1 `S557 1 . 1 0 ]
+[v _PIE0bits PIE0bits `VES564  1 e 1 @3773 ]
+[s S448 . 1 `uc 1 SSPIE 1 0 :1:0 
+`uc 1 BCLIE 1 0 :1:1 
+`uc 1 SSP2IE 1 0 :1:2 
+`uc 1 BCL2IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 TX2IE 1 0 :1:6 
+`uc 1 RC2IE 1 0 :1:7 
+]
+"15362
+[s S457 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[u S463 . 1 `S448 1 . 1 0 `S457 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES463  1 e 1 @3776 ]
+[s S540 . 1 `uc 1 INT0IF 1 0 :1:0 
+`uc 1 INT1IF 1 0 :1:1 
+`uc 1 INT2IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 IOCIF 1 0 :1:4 
+`uc 1 TMR0IF 1 0 :1:5 
+]
+"15647
+[u S547 . 1 `S540 1 . 1 0 ]
+[v _PIR0bits PIR0bits `VES547  1 e 1 @3781 ]
+[s S380 . 1 `uc 1 SSPIF 1 0 :1:0 
+`uc 1 BCLIF 1 0 :1:1 
+`uc 1 SSP2IF 1 0 :1:2 
+`uc 1 BCL2IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 TX2IF 1 0 :1:6 
+`uc 1 RC2IF 1 0 :1:7 
+]
+"15779
+[s S389 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S395 . 1 `S380 1 . 1 0 `S389 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES395  1 e 1 @3784 ]
+"17941
+[v _RB1PPS RB1PPS `VEuc  1 e 1 @3819 ]
+"17985
+[v _RB2PPS RB2PPS `VEuc  1 e 1 @3820 ]
+"18381
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @3829 ]
+"18469
+[v _RC5PPS RC5PPS `VEuc  1 e 1 @3831 ]
+[s S45 . 1 `uc 1 ANSELB0 1 0 :1:0 
+`uc 1 ANSELB1 1 0 :1:1 
+`uc 1 ANSELB2 1 0 :1:2 
+`uc 1 ANSELB3 1 0 :1:3 
+`uc 1 ANSELB4 1 0 :1:4 
+`uc 1 ANSELB5 1 0 :1:5 
+`uc 1 ANSELB6 1 0 :1:6 
+`uc 1 ANSELB7 1 0 :1:7 
+]
+"20032
+[u S54 . 1 `S45 1 . 1 0 ]
+[v _ANSELBbits ANSELBbits `VES54  1 e 1 @3860 ]
+"20511
+[v _ANSELC ANSELC `VEuc  1 e 1 @3868 ]
+[s S24 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+"27908
+[u S33 . 1 `S24 1 . 1 0 ]
+[v _TRISBbits TRISBbits `VES33  1 e 1 @3976 ]
+"28008
+[v _TRISC TRISC `VEuc  1 e 1 @3977 ]
+"28600
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @3985 ]
+"28620
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @3986 ]
+"28810
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @3988 ]
+"29264
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @3989 ]
+"29294
+[s S966 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S975 . 1 `S335 1 . 1 0 `S341 1 . 1 0 `S966 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES975  1 e 1 @3989 ]
+"36187
+[v _TMR0L TMR0L `VEuc  1 e 1 @4050 ]
+"36325
+[v _TMR0H TMR0H `VEuc  1 e 1 @4051 ]
+"36579
+[v _T0CON0 T0CON0 `VEuc  1 e 1 @4052 ]
+[s S623 . 1 `uc 1 T0OUTPS 1 0 :4:0 
+`uc 1 T016BIT 1 0 :1:4 
+`uc 1 T0OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 T0EN 1 0 :1:7 
+]
+"36599
+[s S629 . 1 `uc 1 T0OUTPS0 1 0 :1:0 
+`uc 1 T0OUTPS1 1 0 :1:1 
+`uc 1 T0OUTPS2 1 0 :1:2 
+`uc 1 T0OUTPS3 1 0 :1:3 
+]
+"36599
+[u S634 . 1 `S623 1 . 1 0 `S629 1 . 1 0 ]
+"36599
+"36599
+[v _T0CON0bits T0CON0bits `VES634  1 e 1 @4052 ]
+"36644
+[v _T0CON1 T0CON1 `VEuc  1 e 1 @4053 ]
+[s S824 . 1 `uc 1 INT0EDG 1 0 :1:0 
+`uc 1 INT1EDG 1 0 :1:1 
+`uc 1 INT2EDG 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 IPEN 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"37529
+[s S832 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"37529
+[s S836 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+"37529
+[u S840 . 1 `S824 1 . 1 0 `S832 1 . 1 0 `S836 1 . 1 0 ]
+"37529
+"37529
+[v _INTCONbits INTCONbits `VES840  1 e 1 @4082 ]
+"3 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\errno.c
+[v _errno errno `i  1 e 2 0 ]
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\expand_heap.c
+[v ___heap_hi __heap_hi `[0]uc  1 e 0 0 ]
+[v ___heap_lo __heap_lo `[0]uc  1 e 0 0 ]
+"12
+[v _brkp brkp `*.39uc  1 s 2 brkp ]
+"17 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lite_free.c
+[u S1462 . 3 `*.2S1464 1 next 3 0 `[1]uc 1 space 1 0 ]
+[s S1464 chunk 5 `ui 1 size 2 0 `S1462 1 . 3 2 ]
+[v ___freelist __freelist `*.39S1464  1 e 2 0 ]
+"21 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _pixel pixel `*.39uc  1 e 2 0 ]
+"22
+[v _spi_estado spi_estado `uc  1 e 1 0 ]
+"27
+[v _s s `uc  1 e 1 0 ]
+"28
+[v _n n `uc  1 e 1 0 ]
+"29
+[v _direccion direccion `uc  1 e 1 0 ]
+"30
+[v _n_led n_led `us  1 e 2 0 ]
+[v _led_group led_group `us  1 e 2 0 ]
+[v _led_env led_env `us  1 e 2 0 ]
+"31
+[v _est_sec est_sec `us  1 e 2 0 ]
+[v _est_sec_r est_sec_r `us  1 e 2 0 ]
+"32
+[v _i i `us  1 e 2 0 ]
+[v _contador contador `us  1 e 2 0 ]
+"33
+[v _periodo periodo `ul  1 e 4 0 ]
+[v _rep rep `ul  1 e 4 0 ]
+[v _rep_r rep_r `ul  1 e 4 0 ]
+[v _tiempo tiempo `ul  1 e 4 0 ]
+"34
+[v _dummy dummy `VEuc  1 e 1 0 ]
+"253
+[v _main main `(v  1 e 1 0 ]
+{
+"263
+} 0
+"9 C:\Users\pabno\led-arc-controller\mcu\Slave.X\spi.c
+[v _spi_ini spi_ini `(v  1 e 1 0 ]
+{
+"24
+} 0
+"39 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _ini_timer0 ini_timer0 `(v  1 e 1 0 ]
+{
+"46
+} 0
+"10 C:\Users\pabno\led-arc-controller\mcu\Slave.X\i2c_slave.c
+[v _i2c_ini_slave i2c_ini_slave `(v  1 e 1 0 ]
+{
+"31
+} 0
+"148 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _interrupciones interrupciones `IIH(v  1 e 1 0 ]
+{
+"251
+} 0
+"63
+[v _set_pixel_color set_pixel_color `(v  1 e 1 0 ]
+{
+"65
+[v set_pixel_color@p p `*.39uc  1 a 2 9 ]
+"63
+[v set_pixel_color@m m `us  1 p 2 6 ]
+[v set_pixel_color@c c `uc  1 p 1 8 ]
+"68
+} 0
+"53
+[v _ini_array ini_array `(*.39uc  1 e 2 0 ]
+{
+"54
+[v ini_array@array array `*.39uc  1 a 2 36 ]
+"53
+[v ini_array@secu secu `us  1 p 2 32 ]
+[v ini_array@led led `us  1 p 2 34 ]
+"56
+} 0
+"16 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lite_malloc.c
+[v _malloc malloc `(*.39v  1 e 2 0 ]
+{
+"59
+[v malloc@sz sz `*.39ui  1 a 2 26 ]
+"46
+[v malloc@new new `*.39uc  1 a 2 30 ]
+"45
+[v malloc@m m `ui  1 a 2 24 ]
+"20
+[v malloc@p p `*.39v  1 a 2 28 ]
+"16
+[v malloc@n n `ui  1 p 2 20 ]
+"18
+[v malloc@cur cur `*.39uc  1 s 2 cur ]
+[v malloc@end end `*.39uc  1 s 2 end ]
+"19
+[v malloc@lock lock `VE[2]i  1 s 4 lock ]
+"68
+} 0
+"19 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lite_free.c
+[v ___simple_search_fl __simple_search_fl `(*.39v  1 e 2 0 ]
+{
+"50
+[u S1462 . 3 `*.2S1464 1 next 3 0 `[1]uc 1 space 1 0 ]
+[s S1464 chunk 5 `ui 1 size 2 0 `S1462 1 . 3 2 ]
+[v ___simple_search_fl@split split `*.39S1464  1 a 2 10 ]
+"53
+[v ___simple_search_fl@remaining_size remaining_size `ui  1 a 2 6 ]
+"45
+[u S1462 . 3 `*.2S1464 1 next 3 0 `[1]uc 1 space 1 0 ]
+[s S1464 chunk 5 `ui 1 size 2 0 `S1462 1 . 3 2 ]
+[v ___simple_search_fl@next next `*.39S1464  1 a 2 14 ]
+"20
+[u S1462 . 3 `*.2S1464 1 next 3 0 `[1]uc 1 space 1 0 ]
+[s S1464 chunk 5 `ui 1 size 2 0 `S1462 1 . 3 2 ]
+[v ___simple_search_fl@best best `*.39S1464  1 a 2 18 ]
+"23
+[v ___simple_search_fl@c c `*.39S1464  1 a 2 16 ]
+"22
+[v ___simple_search_fl@last last `*.39S1464  1 a 2 12 ]
+"21
+[v ___simple_search_fl@best_last best_last `*.39S1464  1 a 2 8 ]
+"19
+[v ___simple_search_fl@n n `ui  1 p 2 0 ]
+"65
+} 0
+"14 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\expand_heap.c
+[v ___expand_heap __expand_heap `(*.39v  1 e 2 0 ]
+{
+"17
+[v ___expand_heap@new_brkp new_brkp `*.39uc  1 a 2 6 ]
+"16
+[v ___expand_heap@n n `ui  1 a 2 4 ]
+"14
+[v ___expand_heap@pn pn `*.39ui  1 p 2 0 ]
+"32
+} 0
+"127 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _gestion_est_rep gestion_est_rep `(v  1 e 1 0 ]
+{
+"146
+} 0
+"115
+[v _start_frame start_frame `(v  1 e 1 0 ]
+{
+"122
+} 0
+"67 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lite_free.c
+[v _free free `(v  1 e 1 0 ]
+{
+"68
+[u S1462 . 3 `*.2S1464 1 next 3 0 `[1]uc 1 space 1 0 ]
+[s S1464 chunk 5 `ui 1 size 2 0 `S1462 1 . 3 2 ]
+[v free@c c `*.39S1464  1 a 2 8 ]
+"69
+[v free@cptr cptr `*.39uc  1 a 2 6 ]
+"67
+[v free@ptr ptr `*.39v  1 p 2 0 ]
+"94
+} 0
+"87 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _envio_pixel envio_pixel `(v  1 e 1 0 ]
+{
+"110
+} 0
+"15 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\lwdiv.c
+[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+{
+"10
+[v ___lwdiv@quotient quotient `ui  1 a 2 4 ]
+"11
+[v ___lwdiv@counter counter `uc  1 a 1 6 ]
+"7
+[v ___lwdiv@dividend dividend `ui  1 p 2 0 ]
+[v ___lwdiv@divisor divisor `ui  1 p 2 2 ]
+"30
+} 0
+"73 C:\Users\pabno\led-arc-controller\mcu\Slave.X\main.c
+[v _end_frame end_frame `(v  1 e 1 0 ]
+{
+"80
+} 0
+"7 C:\Program Files\Microchip\xc8\v2.41\pic\sources\c99\common\__lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"10
+[v ___lldiv@quotient quotient `ul  1 a 4 8 ]
+"11
+[v ___lldiv@counter counter `uc  1 a 1 12 ]
+"7
+[v ___lldiv@dividend dividend `ul  1 p 4 0 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 4 ]
+"30
+} 0
